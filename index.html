@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Reddit News Tracker</title>
+  <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+  <script type="text/javascript" src="js/reddit.js"></script>
+  <style>
+  	ul#content {
+  		list-style-type: none;
+  	}
+	h1 {
+		font-family: verdana, sans-serif;
+		color: gray;
+		text-align: center;
+	}
+	li {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: 1em;
+		margin-right: 1em;
+		font-family: verdana, sans-serif;
+	}
+	.subreddit {
+		color: gray;
+	}
+	.time {
+		color: gray;
+		font-size: small;
+	}
+	.new-data {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+  </style>
+</head>
+<body>
+	<h1>Reddit News Tracker</h1>
+  <div id="top-holder"></div>
+  <ul id="content"></ul>
+  <input type="button" value="Show 10 more links" id="show-more" onclick="morelinks();">
+  <div id="bottom-holder"></div>
+</body>
